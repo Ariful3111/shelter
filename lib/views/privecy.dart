@@ -19,7 +19,7 @@ class Privacy extends StatelessWidget {
             children: [
               Expanded(
                 child: SfPdfViewer.network(
-                  'https://firebasestorage.googleapis.com/v0/b/tour-application-7a61a.appspot.com/o/Privacy%2FAriful%20Islam%20CV.pdf?alt=media&token=206a6098-4a3a-42be-9303-2a6ec3323717',
+                  'https://firebasestorage.googleapis.com/v0/b/shelter-c28ba.appspot.com/o/Privacy%2FCV%20for%20job.pdf?alt=media&token=885dcb93-1dc0-43b2-9fc1-1c0d88cbb9c1',
                   onDocumentLoaded: (PdfDocumentLoadedDetails details) {
                     _loaded.value = true;
                   },
@@ -29,7 +29,7 @@ class Privacy extends StatelessWidget {
              Obx(() => _loaded==true?
              VioletButton(
                'Agree',
-                 ()=> Get.toNamed(bottomnav),
+                 ()=> Get.toNamed(main_home_screen),
              ):
                  Text('Still Loading'),
              ),

@@ -159,11 +159,11 @@ class UserFrom extends StatelessWidget {
                 ),
                 VioletButton(
                   'Submit',
-                  () => User_info().sendFromDataToDB(
+                  () => UsersInfo().sendFormDataToDB(
                       _nameController.text,
                      int.parse(_phoneController.text),
                       _addressController.text,
-                      dob ?? 'null',
+                      dob ?? '$dob',
                       gender),
                 ),
               ],

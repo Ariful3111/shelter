@@ -58,15 +58,22 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: AppStrings.AppName,
           theme: ThemeData(
+            appBarTheme: AppBarTheme(
+              titleTextStyle: TextStyle(
+                color: Colors.black,
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+              )
+            ),
             primarySwatch: Colors.blue,
             textTheme: GoogleFonts.poppinsTextTheme(
               Theme.of(context).textTheme.apply(),
             ),
             scaffoldBackgroundColor: AppColors.scaffoldColor,
           ),
-          initialRoute: splash,
+          initialRoute: main_home_screen,
           getPages: getpages,
-          home: Splash_screen(),
+          //home: Splash_screen(),
         );
       },
     );

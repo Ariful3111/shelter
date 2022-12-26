@@ -19,9 +19,9 @@ class _Splash_screenState extends State<Splash_screen> {
   _chosescreen(context) async {
     var _userid = box.read('id');
     if (_userid != null) {
-      Get.toNamed(bottomnav);
+      Get.toNamed(onboarding);
     } else {
-      Get.toNamed(signup);
+      Get.toNamed(main_home_screen);
     }
   }
 
