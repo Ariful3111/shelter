@@ -61,12 +61,7 @@ class Signup extends StatelessWidget {
                 ),
                 VioletButton(
                   'Create Account',
-                  () {
-                    final userEmail = _emailController.text;
-                    final userPass = _passwordController.text;
-                    var obj = Auth();
-                    // obj.signUp(userEmail, userPass, context);
-                  },
+                  () => Auth().registration(_emailController.text, _passwordController.text, context),
                 ),
                 SizedBox(
                   height: 40.h,
