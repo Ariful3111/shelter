@@ -61,7 +61,7 @@ class Signup extends StatelessWidget {
                 ),
                 VioletButton(
                   'Create Account',
-                  () => Auth().registration(_emailController.text, _passwordController.text, context),
+                  () => Auth().signup(_emailController.text, _passwordController.text, context),
                 ),
                 SizedBox(
                   height: 40.h,
